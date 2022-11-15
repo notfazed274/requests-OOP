@@ -1,12 +1,11 @@
 from utils.reqClasses import requestMethods
 import json
 
+# Should exclude url from test suite
 cats_api = 'https://http.cat/200'
 
 h = open('commonJson.json')
 headers = json.load(h)    
-
-#Instance object, then call the method
 
 
 def test_get():
