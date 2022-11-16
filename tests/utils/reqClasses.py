@@ -1,8 +1,10 @@
-import json
-
 import requests
 
+
 class requestMethods:
+
+    test = 'abc'
+
     def __init__(self, url, headers, payload):
         self.url = url
         self.headers = headers
@@ -10,8 +12,16 @@ class requestMethods:
 
     def get(self):
         r = requests.get(self.url)
-        return r
+        return r.status_code
 
     def get_response(self):
         r = requests.get(self.url)
         return r.content
+
+    def post(self):
+        r = requests.post(self.url, self.headers, self.payload)
+        return r.content, r.status_code
+
+
+
+
