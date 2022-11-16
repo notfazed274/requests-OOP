@@ -13,5 +13,5 @@ authorization = json.dumps(
     )
 
 
-head = json.dumps({"Content-Type": "application/json"})
+headers = json.dumps({"Content-Type": "application/json"})
 
