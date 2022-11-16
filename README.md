@@ -1,2 +1,2 @@
-# Requests-Animechan
-Practicando API testing usando Requests en una API sobre anime.
+# request refactor
+Applying OOP to Requests library. Also using Pytest
