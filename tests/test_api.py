@@ -7,7 +7,7 @@ def test_api_books_status():
     list_of_books = requestMethods(books_api_list_books, headers, '')
     status_code = list_of_books.get()
     assert status_code == 200
-    print(list_of_books.test)
+    print(status_code)
 
 
 def test_api_books_response():
