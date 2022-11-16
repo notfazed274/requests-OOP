@@ -1,5 +1,6 @@
 from utils.reqClasses import requestMethods
 from utils.endpoints import *
+import pytest
 
 
 def test_api_books_status():
