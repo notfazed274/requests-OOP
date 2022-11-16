@@ -1,4 +1,5 @@
 import requests
+import json
 
 
 class requestMethods:
@@ -16,7 +17,7 @@ class requestMethods:
 
     def get_response(self):
         r = requests.get(self.url)
-        return r.content
+        return r.json()
 
     def post(self):
         r = requests.post(self.url, self.headers, self.payload)
